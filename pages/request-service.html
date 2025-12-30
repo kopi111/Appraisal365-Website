@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a property valuation, land survey, or other real estate service from Appraisal 365. Fast, professional service across Jamaica.">
+    <title>Request A Service | Appraisal 365</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-text">Appraisal <span>365</span></div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="who-we-are.html" class="nav-link">Who We Are <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="who-we-are.html#our-firm">Our Firm</a>
+                        <a href="who-we-are.html#principals">Our Principals</a>
+                        <a href="who-we-are.html#admin-team">Administrative Team</a>
+                        <a href="who-we-are.html#consultants">Consultants & Partners</a>
+                    </div>
+                </div>
+                <a href="services.html" class="nav-link">Our Services</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <div class="nav-cta">
+                    <a href="request-service.html" class="btn btn-primary">Request A Service</a>
+                </div>
+            </nav>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Request A Service</h1>
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <span>Request A Service</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Form Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 350px; gap: 60px;">
+                <!-- Main Form -->
+                <div>
+                    <div style="background: #fff; border: 1px solid #e9ecef; border-radius: 16px; padding: 50px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+                        <!-- Step Indicator -->
+                        <div class="step-indicator">
+                            <div class="step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <span class="step-label">Select Service</span>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-number">2</div>
+                                <span class="step-label">Client Info</span>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-number">3</div>
+                                <span class="step-label">Property Details</span>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-number">4</div>
+                                <span class="step-label">Documents</span>
+                            </div>
+                            <div class="step" data-step="5">
+                                <div class="step-number">5</div>
+                                <span class="step-label">Review & Sign</span>
+                            </div>
+                        </div>
+
+                        <form id="serviceRequestForm">
+                            <!-- Step 1: Service Selection -->
+                            <div class="form-step active" data-step="1">
+                                <h3 style="margin-bottom: 30px;">Select Service(s) Required</h3>
+                                <div class="service-select-grid">
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="valuation">
+                                        <i class="fas fa-file-invoice-dollar"></i>
+                                        <h5>Valuation Report</h5>
+                                        <p>Property appraisal</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="survey">
+                                        <i class="fas fa-compass-drafting"></i>
+                                        <h5>Land Survey</h5>
+                                        <p>Surveyor's ID report</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="legal">
+                                        <i class="fas fa-gavel"></i>
+                                        <h5>Legal Representation</h5>
+                                        <p>Real estate legal</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="sales">
+                                        <i class="fas fa-home"></i>
+                                        <h5>Sales / Rentals</h5>
+                                        <p>Property transactions</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="auction">
+                                        <i class="fas fa-gavel"></i>
+                                        <h5>Auction</h5>
+                                        <p>Property auction</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="property-mgmt">
+                                        <i class="fas fa-building"></i>
+                                        <h5>Property Management</h5>
+                                        <p>Rental management</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="structural">
+                                        <i class="fas fa-hard-hat"></i>
+                                        <h5>Structural Survey</h5>
+                                        <p>Building inspection</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="construction">
+                                        <i class="fas fa-calculator"></i>
+                                        <h5>Construction Estimate</h5>
+                                        <p>Bill of quantities</p>
+                                    </label>
+                                    <label class="service-select-card">
+                                        <input type="checkbox" name="services" value="other">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <h5>Other</h5>
+                                        <p>Specify below</p>
+                                    </label>
+                                </div>
+                                <div class="form-group" style="margin-top: 25px;">
+                                    <label class="form-label" for="otherService">Other Service (if applicable)</label>
+                                    <input type="text" class="form-control" id="otherService" name="otherService" placeholder="Please specify...">
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Client Information -->
+                            <div class="form-step" data-step="2">
+                                <h3 style="margin-bottom: 30px;">Client Information</h3>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="instructionDate">Date of Instruction *</label>
+                                    <input type="date" class="form-control" id="instructionDate" name="instructionDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="instructedBy">Instructions Issued By *</label>
+                                    <input type="text" class="form-control" id="instructedBy" name="instructedBy" placeholder="Full name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="clientAddress">Address *</label>
+                                    <textarea class="form-control" id="clientAddress" name="clientAddress" rows="3" placeholder="Street address, city, parish" required></textarea>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="clientEmail">Email *</label>
+                                        <input type="email" class="form-control" id="clientEmail" name="clientEmail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="clientPhone">Telephone # *</label>
+                                        <input type="tel" class="form-control" id="clientPhone" name="clientPhone" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Property Information -->
+                            <div class="form-step" data-step="3">
+                                <h3 style="margin-bottom: 30px;">Property Information</h3>
+
+                                <div class="form-group">
+                                    <label class="form-label">Type of Property *</label>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="propertyType" value="commercial" required>
+                                            <span>Commercial</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="propertyType" value="residential">
+                                            <span>Residential</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="propertyType" value="agricultural">
+                                            <span>Agricultural</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="propertyType" value="industrial">
+                                            <span>Industrial</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="propertyType" value="vacant">
+                                            <span>Vacant Lot</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="propertyDirection">Direction to Property *</label>
+                                    <textarea class="form-control" id="propertyDirection" name="propertyDirection" rows="3" placeholder="Provide clear directions to the property..." required></textarea>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="volume">Volume</label>
+                                        <input type="text" class="form-control" id="volume" name="volume">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="folio">Folio</label>
+                                        <input type="text" class="form-control" id="folio" name="folio">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="strataPlan">Deposit / Strata Plan #</label>
+                                    <input type="text" class="form-control" id="strataPlan" name="strataPlan">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Availability of Keys *</label>
+                                    <div style="display: flex; gap: 20px;">
+                                        <label class="form-check">
+                                            <input type="radio" name="keysAvailable" value="yes" required>
+                                            <span>Yes</span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input type="radio" name="keysAvailable" value="no">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="serviceDate">Service Required By (Date)</label>
+                                    <input type="date" class="form-control" id="serviceDate" name="serviceDate">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Purpose of Service *</label>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="purpose" value="market-value" required>
+                                            <span>Market Value</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="purpose" value="sale">
+                                            <span>Sale</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="purpose" value="purchase">
+                                            <span>Purchase</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="purpose" value="mortgage">
+                                            <span>Mortgage</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="purpose" value="insurance">
+                                            <span>Insurance</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="purpose" value="probate">
+                                            <span>Probate</span>
+                                        </label>
+                                        <label class="form-check" style="flex: 0 0 auto;">
+                                            <input type="radio" name="purpose" value="other-purpose">
+                                            <span>Other</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="mortgageBank">Name of Mortgage Institution / Bank</label>
+                                    <input type="text" class="form-control" id="mortgageBank" name="mortgageBank">
+                                </div>
+
+                                <h4 style="margin-top: 40px; margin-bottom: 20px; padding-top: 20px; border-top: 1px solid #e9ecef;">Contact for Appointment / Inspection</h4>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="contactName">Name *</label>
+                                        <input type="text" class="form-control" id="contactName" name="contactName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="contactPhone">Telephone # *</label>
+                                        <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="contactEmail">Email</label>
+                                    <input type="email" class="form-control" id="contactEmail" name="contactEmail">
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Document Upload -->
+                            <div class="form-step" data-step="4">
+                                <h3 style="margin-bottom: 30px;">Upload Documents</h3>
+                                <p style="margin-bottom: 30px; color: #6C757D;">Upload any relevant documents such as title documents, plans, photos, or other supporting materials.</p>
+
+                                <div class="form-group">
+                                    <label class="form-label">Documents (Optional)</label>
+                                    <div style="border: 2px dashed #e9ecef; border-radius: 12px; padding: 40px; text-align: center; background: #F8F9FA;">
+                                        <i class="fas fa-cloud-upload-alt" style="font-size: 3rem; color: #002366; margin-bottom: 15px;"></i>
+                                        <p style="margin-bottom: 15px;">Drag & drop files here or click to browse</p>
+                                        <input type="file" id="documentUpload" name="documents" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" style="display: none;">
+                                        <button type="button" class="btn btn-outline" onclick="document.getElementById('documentUpload').click()">
+                                            <i class="fas fa-folder-open"></i> Browse Files
+                                        </button>
+                                        <p style="font-size: 0.85rem; color: #6C757D; margin-top: 15px; margin-bottom: 0;">Accepted: PDF, DOC, JPG, PNG (Max 10MB each)</p>
+                                    </div>
+                                    <div id="fileList" style="margin-top: 15px;"></div>
+                                </div>
+
+                                <h4 style="margin-top: 40px; margin-bottom: 20px; padding-top: 20px; border-top: 1px solid #e9ecef;">Billing Information</h4>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="billingName">Name *</label>
+                                    <input type="text" class="form-control" id="billingName" name="billingName" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="billingAddress">Address *</label>
+                                    <textarea class="form-control" id="billingAddress" name="billingAddress" rows="2" required></textarea>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="billingPhone">Telephone # *</label>
+                                        <input type="tel" class="form-control" id="billingPhone" name="billingPhone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="billingEmail">Email *</label>
+                                        <input type="email" class="form-control" id="billingEmail" name="billingEmail" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 5: Review & Sign -->
+                            <div class="form-step" data-step="5">
+                                <h3 style="margin-bottom: 30px;">Review & Sign</h3>
+
+                                <!-- Terms -->
+                                <div style="background: #F8F9FA; padding: 25px; border-radius: 12px; margin-bottom: 30px; max-height: 300px; overflow-y: auto;">
+                                    <h5 style="margin-bottom: 15px;">Terms & Conditions</h5>
+                                    <p style="font-size: 0.9rem;"><strong>THE PARTIES ARE BOUND BY THE CONDITIONS STIPULATED BELOW UPON THE SIGNING OF THIS SERVICE REQUEST FORM</strong></p>
+
+                                    <p style="font-size: 0.9rem;"><strong>1. NON-REFUNDABLE DEPOSIT PAYABLE: JMD$20,000.00</strong></p>
+                                    <p style="font-size: 0.9rem;">The deposit payable shall be subjected to the following condition: The deposit paid will be deducted from the final fee after the completion of the requested service.</p>
+
+                                    <p style="font-size: 0.9rem;"><strong>2. FEE SCHEDULE</strong></p>
+                                    <ul style="font-size: 0.9rem; padding-left: 20px;">
+                                        <li>Properties Valuing JMD$5M or less: JMD$30,000.00 + miscellaneous fees</li>
+                                        <li>Properties Valuing over JMD$5M to JMD$20M: JMD$3,000.00 per million + miscellaneous fees</li>
+                                        <li>Travelling Charges (Kingston & St. Andrew/Spanish Town/Portmore): JMD$5,000.00</li>
+                                        <li>Travelling Charges (Outside): JMD$65.00 per km</li>
+                                    </ul>
+
+                                    <p style="font-size: 0.9rem;">Payment in full satisfaction of the balance owing shall be due and payable by the Client upon being notified of the completed Valuation/Survey Report.</p>
+
+                                    <p style="font-size: 0.9rem;">The Client AGREES to settle the balance owing before collecting the Valuation/Survey Report(s), and within 48 hours of being notified.</p>
+
+                                    <p style="font-size: 0.9rem;">The Client hereby AGREES to pay interest at the rate of 2% per month on the balance which remains outstanding after 14 days of being notified of its completion.</p>
+                                </div>
+
+                                <div class="form-check" style="margin-bottom: 30px;">
+                                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                    <label for="agreeTerms">I have read and agree to the Terms & Conditions above. *</label>
+                                </div>
+
+                                <!-- Signature -->
+                                <div class="form-group">
+                                    <label class="form-label">Digital Signature *</label>
+                                    <p style="font-size: 0.9rem; color: #6C757D; margin-bottom: 15px;">Please sign in the box below using your mouse or touch screen.</p>
+                                    <div class="signature-pad" id="signaturePad">
+                                        <canvas id="signatureCanvas"></canvas>
+                                        <button type="button" class="signature-clear" onclick="clearSignature()">Clear</button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="signatureDate">Date *</label>
+                                    <input type="date" class="form-control" id="signatureDate" name="signatureDate" required>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline" id="prevBtn" style="display: none;">
+                                    <i class="fas fa-arrow-left"></i> Previous
+                                </button>
+                                <button type="button" class="btn btn-primary" id="nextBtn">
+                                    Next <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <button type="submit" class="btn btn-primary btn-lg" id="submitBtn" style="display: none;">
+                                    <i class="fas fa-paper-plane"></i> Submit Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <!-- Help Box -->
+                    <div style="background: #002366; color: #fff; padding: 30px; border-radius: 12px; margin-bottom: 25px;">
+                        <h4 style="color: #fff; margin-bottom: 15px;"><i class="fas fa-headset" style="color: #D4AF37; margin-right: 10px;"></i> Need Help?</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 20px;">Our team is here to assist you with your service request.</p>
+                        <p style="margin-bottom: 8px;"><i class="fas fa-phone" style="color: #D4AF37; margin-right: 10px;"></i> <a href="tel:+18763661711" style="color: #fff;">876-366-1711</a></p>
+                        <p style="margin-bottom: 0;"><i class="fas fa-envelope" style="color: #D4AF37; margin-right: 10px;"></i> <a href="mailto:info@app365ja.com" style="color: #fff;">info@app365ja.com</a></p>
+                    </div>
+
+                    <!-- Security Box -->
+                    <div style="background: #F8F9FA; padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+                        <h5 style="margin-bottom: 15px;"><i class="fas fa-shield-halved" style="color: #2E8B57; margin-right: 10px;"></i> Secure & Confidential</h5>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Your information is encrypted and handled with the utmost confidentiality.</p>
+                    </div>
+
+                    <!-- What Happens Next -->
+                    <div style="background: #F8F9FA; padding: 25px; border-radius: 12px;">
+                        <h5 style="margin-bottom: 20px;"><i class="fas fa-list-check" style="color: #002366; margin-right: 10px;"></i> What Happens Next</h5>
+                        <ol style="padding-left: 20px; font-size: 0.9rem;">
+                            <li style="margin-bottom: 12px;">We receive and review your request</li>
+                            <li style="margin-bottom: 12px;">Our team contacts you to confirm details</li>
+                            <li style="margin-bottom: 12px;">Deposit payment is processed</li>
+                            <li style="margin-bottom: 12px;">Site inspection is scheduled</li>
+                            <li style="margin-bottom: 0;">Report is prepared and delivered</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo-text" style="font-size: 1.8rem;">Appraisal <span style="color: #D4AF37;">365</span></div>
+                    <p>Jamaica's premier integrated built-environment services firm.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="who-we-are.html">Who We Are</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html#valuations">Valuations</a></li>
+                        <li><a href="services.html#surveying">Land Surveying</a></li>
+                        <li><a href="services.html#auctions">Property Auctions</a></li>
+                        <li><a href="services.html#construction">Construction Estimates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 2A Birdsucker Lane [Upper Floor]<br>Barbican, Kingston 8, Jamaica</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+18763661711">876-366-1711</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@app365ja.com">info@app365ja.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Appraisal 365. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
