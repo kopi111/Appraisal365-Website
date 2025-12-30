@@ -1,5 +1,5 @@
 /**
- * Appraisal 365 - Main JavaScript
+ * TEN24 Realty - Main JavaScript
  * Handles all interactive functionality
  */
 
